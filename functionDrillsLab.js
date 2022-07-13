@@ -37,7 +37,11 @@ const jsNinja = () => {
 */
 
 //CODE HERE
-
+let name = 'Cameron'
+const printName = () => {
+  console.log(name);
+}
+printName();
 
 ////////////////// PROBLEM 4 ////////////////////
 /*
