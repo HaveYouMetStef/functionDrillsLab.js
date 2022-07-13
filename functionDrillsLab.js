@@ -54,7 +54,11 @@ printName();
 */
 
 //CODE HERE
-
+let name2 = ''
+const greeting = (name2) => {
+  console.log(`Hello, ${name2}`);
+}
+greeting('Jake')
 
 ////////////////// PROBLEM 5 ////////////////////
 
