@@ -54,6 +54,7 @@ printName();
 */
 
 //CODE HERE
+// *Ask Norman or Nitin about this problem*
 let name2 = ''
 const greeting = (name2) => {
   console.log(`Hello, ${name2}`);
@@ -72,7 +73,23 @@ greeting('Jake')
 */
 
 //CODE HERE
-
+let num1 = Number
+let num2 = Number
+const compareNums = (num1, num2) => {
+  if(num1 > num2) {
+    return(num1);
+  } else if (num1 === num2) {
+    return(num1);
+  } else {
+    return(num2);
+  }
+}
+console.log(compareNums(4,2));
+// ask Nitin and Norman
+// let num1 = Number
+// let num2 = Number
+// const compareNums = (num1, num2) => num1 > num2 ? num1 : Number ;
+// console.log(compareNums);
 
 ////////////////// PROBLEM 6 ////////////////////
 /*
