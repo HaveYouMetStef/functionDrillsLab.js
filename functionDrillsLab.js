@@ -100,7 +100,13 @@ console.log(compareNums(4,2));
 */
 
 //CODE HERE
-
+let a = Number
+let b = Number
+const add = (a,b) => {
+  return a + b;
+}
+let sum = (add(10,10))
+console.log(sum);
 
 ////////////////// PROBLEM 7 ////////////////////
 
