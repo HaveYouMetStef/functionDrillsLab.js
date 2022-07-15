@@ -146,8 +146,8 @@ console.log('arrow')
 
   Brownie points if you use a template string
 */
-
-
+const exclaimThree = str => (str.toUpperCase() + '!!!')
+console.log(exclaimThree('Arrow'));
 
 ////////////////// PROBLEM 9 ////////////////////
 
