@@ -238,7 +238,15 @@ printAllNames();
 */
 
 //CODE HERE
-
+const thatsOdd = (num) => {
+  if (num % 2 === 0) {
+    return(`That's not odd!`);
+  } else {
+    return(`That is odd indeed`);
+  }
+}
+let oddChecker = thatsOdd(53);
+console.log(oddChecker);
 
 ////////////////// PROBLEM 14 ////////////////////
 
