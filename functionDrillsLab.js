@@ -259,7 +259,8 @@ console.log(oddChecker);
 */
 
 //CODE HERE
-
+const bestMovie = str => (str + " " + 'is the best movie ever!') 
+console.log(bestMovie('The Waterboy'));
 
 ////////////////// PROBLEM 15 ////////////////////
 let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
