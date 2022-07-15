@@ -55,7 +55,7 @@ printName();
 
 //CODE HERE
 // *Ask Norman or Nitin about this problem*
-let name2 = ''
+// let name2 = ''
 const greeting = (name2) => {
   console.log(`Hello, ${name2}`);
 }
@@ -73,8 +73,8 @@ greeting('Jake')
 */
 
 //CODE HERE
-let num1 = Number
-let num2 = Number
+// let num1 = Number
+// let num2 = Number
 const compareNums = (num1, num2) => {
   if(num1 > num2) {
     return(num1);
@@ -88,8 +88,8 @@ console.log(compareNums(4,2));
 // ask Nitin and Norman
 // let num1 = Number
 // let num2 = Number
-// const compareNums = (num1, num2) => num1 > num2 ? num1 : Number ;
-// console.log(compareNums);
+const compareNums2 = (num1, num2) => num1 >= num2 ? num1 : num2 ;
+console.log(compareNums2(4,4));
 
 ////////////////// PROBLEM 6 ////////////////////
 /*
@@ -176,6 +176,17 @@ console.log('declaration')
 
 //CODE HERE
 
+const nameCheck = (str) => {
+  if (str === 'Steven') {
+    return ('What is up Steven?');
+  } else if(str === 'Bryan') {
+    return ('Hey Bryan!')
+  } else {
+    return (`Cool name, ${str}`)
+  }
+}
+let nameGreeting = nameCheck('Stef');
+console.log(nameGreeting);
 
 ////////////////// PROBLEM 11 ////////////////////
 /*
