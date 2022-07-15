@@ -199,7 +199,19 @@ console.log(nameGreeting);
 */
 
 //CODE HERE
-
+const faveColorFinder = (str) => {
+  if(str === 'red') {
+    return ('red is a great color')
+  } else if(str === 'green') {
+    return ('green is a solid favorite color')
+  } else if(str === 'black') {
+    return ('so trendy')
+  } else {
+    return ('you need to evaluate your favorite color choice')
+  }
+}
+let colorRating = faveColorFinder('Cyan');
+console.log(colorRating);
 
 ////////////////// PROBLEM 12 ////////////////////
 let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
