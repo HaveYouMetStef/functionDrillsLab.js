@@ -297,7 +297,17 @@ let loser = 'Glimmer'
 */
 
 //CODE HERE
+// Ask nitin or norman
+const theEliminator = (contestants, loser) => {
+  // let newContestants = []
+  for (i = 0; i < contestants.length; i++) {
+    if (contestants[i] === 'Glimmer')
+      contestants.splice(3,1)
+    }
+    return (contestants)
+  }
 
+console.log(theEliminator(contestants));
 
 ////////////////// PROBLEM 17 ////////////////////
 let sampleString = "Hi, my name is Kylo."
