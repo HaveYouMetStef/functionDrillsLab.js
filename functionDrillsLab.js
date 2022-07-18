@@ -339,18 +339,26 @@ const emailCheck = email => {
   }
   console.log(email.trim());
 }
-console.log(emailCheck(email));
+console.log(emailCheck('steafcak@.com'));
 // console.log(email.trim());
 
 // console.log(emailCheck(email));
 ////////////////// PROBLEM 19 ////////////////////
 /*
-  Write a function, naming it whatever you believe to be appropriate, that buys as many chocolate frogs as possible with a certain amount of gold. Each chocolate frog costs 3 gold. Your function should take in a single parameter, which is the amount of gold you are willing to spend. Your function should return a total amount of chocolate frogs you were able to purchase.
+  Write a function, naming it whatever you believe to be appropriate, that buys as many chocolate frogs as possible with a certain amount of gold. Each chocolate frog costs 3 gold.
+  Your function should take in a single parameter, which is the amount of gold you are willing to spend. Your function should return a total amount of chocolate frogs you were able to purchase.
   Create a variable called `totalFrogs` and set it equal to your function invoked, passing in the amount of gold you are willing to spend.
 */
 
 //CODE HERE
+let cholocateFrogCost = 3
 
+const chocolateFrogEater = (num) => {
+return num / cholocateFrogCost
+}
+let totalFrogs = chocolateFrogEater
+
+console.log(totalFrogs(10, cholocateFrogCost));
 
 ////////////////// PROBLEM 20 ////////////////////
 /*
@@ -362,13 +370,25 @@ console.log(emailCheck(email));
 
 ////////////////// PROBLEM 21 ////////////////////
 let sampleArray = [0,1,2,3,4,7,5,6,8,9]
+// let sampleArrayTwo = [9,10,3,0,1,2,3,4,7,5,6,8,9]
 /*
-  Write a function that takes in an array of numbers as an argument. In the body of the function, write logic to determine if the array is in ascending order. The function should return true, if it is sorted in ascending order, false if it is not. Create a variable, `arrayIsAscending` and set it equal to your function invoked. Use the sample array to test this function.
+  Write a function that takes in an array of numbers as an argument. In the body of the function, write logic to determine if the array is in ascending order. 
+  The function should return true, if it is sorted in ascending order, false if it is not. Create a variable, `arrayIsAscending` and set it equal to your function invoked. 
+  Use the sample array to test this function.
 */
 
 //CODE HERE
-
-
+const ascendingOrder = (array) => {
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] > array[i + 1]) {
+      return false
+    } else {
+      return true
+    }
+  }
+}
+let arrayIsAscending = ascendingOrder
+console.log(arrayIsAscending(sampleArray));
 ////////////////// PROBLEM 22 ////////////////////
 
 let duck = "cute";
@@ -391,13 +411,13 @@ function pond() {
 */
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = []
+let globalScope = ['cute']
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = []
+let bathroomScope = ['squeaky']
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = []
+let bathtubScope = ['nautical']
 
 //This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = []
+let pondScope = ['cute', 'fluffy']
