@@ -317,9 +317,9 @@ let sampleString = "Hi, my name is Kylo."
 */
 
 //CODE HERE
-
-
-////////////////// PROBLEM 18 ////////////////////
+const kyloUppercase = str => (str.toUpperCase())
+console.log(kyloUppercase(sampleString));
+  ////////////////// PROBLEM 18 ////////////////////
 /*
   Write a function called emailCheck that takes in
   one parameter - email.
@@ -329,7 +329,20 @@ let sampleString = "Hi, my name is Kylo."
   If it does, return 'email verified' and if doesn't, 
   return 'must provide a valid email address'
 */
+let email = '  stefcastill@odev.com  '
 
+const emailCheck = email => {
+  if (email.includes('@')) {
+    return ('email verified')
+  } else {
+    return ('must provide a valid email address')
+  }
+  console.log(email.trim());
+}
+console.log(emailCheck(email));
+// console.log(email.trim());
+
+// console.log(emailCheck(email));
 ////////////////// PROBLEM 19 ////////////////////
 /*
   Write a function, naming it whatever you believe to be appropriate, that buys as many chocolate frogs as possible with a certain amount of gold. Each chocolate frog costs 3 gold. Your function should take in a single parameter, which is the amount of gold you are willing to spend. Your function should return a total amount of chocolate frogs you were able to purchase.
